@@ -1,0 +1,7 @@
+﻿select p.nome"Paciente", a.descricao "Procedimento", pr.nome "Profissional" from  paciente p
+inner join atendimento a
+on p.cod  =  a.paciente_cod
+inner join profissional  pr 
+on pr.crm =  a.profissional_cod
+where  p.nome ilike '%1%' 
+

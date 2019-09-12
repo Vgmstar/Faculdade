@@ -1,0 +1,48 @@
+Nome: Vinicius Guilherme Campos / Bruno Eduardo Rodrigues dos Santos
+
+﻿/*Create TABLE Professor (
+	codigo int primary key,
+	nome varchar(40),
+	tempo_servico int,
+	idade int,
+	salario numeric (6,2)
+
+);
+CREATE  TABLE Turma(
+	 id int primary key  ,
+	 ano  int,
+	 num_alunos int,
+	 descricao varchar (40),
+	 professores_cod int references Professor
+);
+
+CREATE TABLE Aluno (
+	matricula int primary key,
+	nome varchar (40),
+	rua varchar(30),
+	idade int,
+	cod_turma int references Turma 
+)*/
+---------------------------------------------------
+
+/*INSERT into professor values (1,'Carlos Andre',14,23,1423.45),(2,'João Alberto',14,40,800.89),(3,'Marilia Pinto',3,35,1005.20);*/
+--INSERT into  Turma values (1,2010,20,'3 Semestre'),(2,2011,30,'4 Semestre'),(3,2011,43,'5 Semestre'),(4,2009,23,'4 Semestre');
+--INSERT into Aluno  values (1409,'Carla','São Pedro',14,2,'Carla@gmail'),(1476,'Adriana','São Paulo',18,2,'adr@igl'),(1288,'Paulo','PE Cicero',14,3,'Paulo@bol'),(3502,'Andrey','c.branco',17,1,'andrey@bol');
+----------------------------------------------------
+--Select * from Aluno
+--SELECT idade,tempo_servico from professor where  nome='João Alberto'
+--SELECT * from Aluno where cod_turma=2
+--SELECT matricula,nome,rua from Aluno where idade=15 or idade=18
+--SELECT matricula,nome,rua from Aluno where idade<>16
+--Select nome from professor where idade>15 and tempo_servico<13
+--SELECT matricula,nome,rua from Aluno where idade=15 or idade=16 or idade=18
+--SELECT matricula,nome,rua from Aluno  where  idade between  18 and 20
+--SELECT codigo,nome,salario*0.18 Salario_Futuro from professor 
+--SELECT  codigo,nome,tempo_servico from professor order by tempo_servico desc limit 3
+--SELECT codigo,nome,tempo_servico,idade from professor order by idade desc
+--SELECT codigo,nome,tempo_servico from professor order by tempo_servico 
+--SELECT matricula,nome,email from Aluno where  idade <=17 limit 2
+--SELECT Aluno.nome,Aluno.email,Turma.descricao from Aluno,Turma where ano=2011
+--SELECT A.nome,a.email,t.descricao,t.ano from Aluno a inner join Turma t on id=cod turma where ano =2011;
+--SELECT A.nome,t.descricao,t.num_alunos from Aluno a inner join Turma t on t.id= a.cod_turma where a.nome= 'Carla' or a.nome = Adriana;
+
